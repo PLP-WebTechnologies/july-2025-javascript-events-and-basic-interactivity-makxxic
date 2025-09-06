@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Page Assignment</h1>
+    <button id="themeToggle">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <!-- Counter Section -->
+  <section class="counter-section">
+    <h2>Button Counter 🎮</h2>
+    <p>Count: <span id="count">0</span></p>
+    <button id="incrementBtn">Increase</button>
+    <button id="resetBtn">Reset</button>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <h2>FAQ ❓</h2>
+    <div class="faq">
+      <button class="faq-question">What is this project?</button>
+      <p class="faq-answer">This is a demo project for learning interactive web pages with JavaScript.</p>
+    </div>
+    <div class="faq">
+      <button class="faq-question">How does it work?</button>
+      <p class="faq-answer">It uses event listeners, DOM manipulation, and form validation to add interactivity.</p>
+    </div>
+  </section>
+
+  <!-- Dropdown Menu Section -->
+  <section class="dropdown-section">
+    <h2>Dropdown Menu ⬇️</h2>
+    <div class="dropdown">
+      <button id="dropdownBtn">Choose Option</button>
+      <div class="dropdown-content" id="dropdownContent">
+        <a href="#">Option 1</a>
+        <a href="#">Option 2</a>
+        <a href="#">Option 3</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabbed Interface Section -->
+  <section class="tabs-section">
+    <h2>Tabbed Interface 📑</h2>
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+      <button class="tab-btn" data-tab="tab2">Tab 2</button>
+      <button class="tab-btn" data-tab="tab3">Tab 3</button>
+    </div>
+    <div class="tab-content active" id="tab1">Content for Tab 1</div>
+    <div class="tab-content" id="tab2">Content for Tab 2</div>
+    <div class="tab-content" id="tab3">Content for Tab 3</div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="form-section">
+    <h2>Sign Up Form 📝</h2>
+    <form id="signupForm" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <span class="error" id="nameError"></span>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <span class="error" id="emailError"></span>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <span class="error" id="passwordError"></span>
+
+      <button type="submit">Submit</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
